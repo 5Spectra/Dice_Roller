@@ -16,3 +16,13 @@ T:\Publica\Andre S\Dados roll\Dados roll\obj\Debug\Dados roll.csprojResolveAssem
 T:\Publica\Andre S\Dados roll\Dados roll\obj\Debug\Dados_roll.Form1.resources
 T:\Publica\Andre S\Dados roll\Dados roll\obj\Debug\Dados_roll.Properties.Resources.resources
 T:\Publica\Andre S\Dados roll\Dados roll\obj\Debug\Dados roll.csproj.GenerateResource.Cache
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\bin\Debug\Dados roll.exe.config
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\obj\Debug\Dados roll.exe
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\obj\Debug\Dados roll.pdb
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\obj\Debug\Dados roll.csprojResolveAssemblyReference.cache
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\obj\Debug\Dados_roll.Form1.resources
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\obj\Debug\Dados_roll.Properties.Resources.resources
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\obj\Debug\Dados_roll.Test_form.resources
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\obj\Debug\Dados roll.csproj.GenerateResource.Cache
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\bin\Debug\Dados roll.exe
+C:\Users\Particular\Documents\Visual Studio 2015\Git Hub\Dice_Roller\Dados roll\Dados roll\bin\Debug\Dados roll.pdb

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dado20 = new System.Windows.Forms.Button();
             this.dado16 = new System.Windows.Forms.Button();
             this.dado12 = new System.Windows.Forms.Button();
@@ -54,30 +53,31 @@
             this.O16 = new System.Windows.Forms.NumericUpDown();
             this.O20 = new System.Windows.Forms.NumericUpDown();
             this.G20 = new System.Windows.Forms.GroupBox();
+            this.V20 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.V16 = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.V12 = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.V10 = new System.Windows.Forms.NumericUpDown();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.V8 = new System.Windows.Forms.NumericUpDown();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.V6 = new System.Windows.Forms.NumericUpDown();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.V2 = new System.Windows.Forms.NumericUpDown();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.V4 = new System.Windows.Forms.NumericUpDown();
             this.Num = new System.Windows.Forms.Label();
             this.T = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.V20 = new System.Windows.Forms.NumericUpDown();
-            this.V16 = new System.Windows.Forms.NumericUpDown();
-            this.V12 = new System.Windows.Forms.NumericUpDown();
-            this.V10 = new System.Windows.Forms.NumericUpDown();
-            this.V8 = new System.Windows.Forms.NumericUpDown();
-            this.V6 = new System.Windows.Forms.NumericUpDown();
-            this.V4 = new System.Windows.Forms.NumericUpDown();
-            this.V2 = new System.Windows.Forms.NumericUpDown();
             this.conta = new System.Windows.Forms.Label();
-            this.vezes = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.vezes = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.M20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.M16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.M12)).BeginInit();
@@ -95,21 +95,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.O16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.O20)).BeginInit();
             this.G20.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.V20)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.V16)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.V12)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.V10)).BeginInit();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.V8)).BeginInit();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.V6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.V4)).BeginInit();
+            this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.V2)).BeginInit();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.V4)).BeginInit();
             this.SuspendLayout();
             // 
             // dado20
@@ -134,6 +134,7 @@
             this.dado16.TabIndex = 2;
             this.dado16.Text = "D16";
             this.dado16.UseVisualStyleBackColor = true;
+            this.dado16.Click += new System.EventHandler(this.dado16_Click);
             // 
             // dado12
             // 
@@ -145,6 +146,7 @@
             this.dado12.TabIndex = 3;
             this.dado12.Text = "D12";
             this.dado12.UseVisualStyleBackColor = true;
+            this.dado12.Click += new System.EventHandler(this.dado12_Click);
             // 
             // dado10
             // 
@@ -156,6 +158,7 @@
             this.dado10.TabIndex = 4;
             this.dado10.Text = "D10";
             this.dado10.UseVisualStyleBackColor = true;
+            this.dado10.Click += new System.EventHandler(this.dado10_Click);
             // 
             // dado8
             // 
@@ -167,6 +170,7 @@
             this.dado8.TabIndex = 5;
             this.dado8.Text = "D8";
             this.dado8.UseVisualStyleBackColor = true;
+            this.dado8.Click += new System.EventHandler(this.dado8_Click);
             // 
             // dado6
             // 
@@ -178,6 +182,7 @@
             this.dado6.TabIndex = 6;
             this.dado6.Text = "D6";
             this.dado6.UseVisualStyleBackColor = true;
+            this.dado6.Click += new System.EventHandler(this.dado6_Click);
             // 
             // dado4
             // 
@@ -189,6 +194,7 @@
             this.dado4.TabIndex = 7;
             this.dado4.Text = "D4";
             this.dado4.UseVisualStyleBackColor = true;
+            this.dado4.Click += new System.EventHandler(this.dado4_Click);
             // 
             // dado2
             // 
@@ -200,6 +206,7 @@
             this.dado2.TabIndex = 8;
             this.dado2.Text = "D2";
             this.dado2.UseVisualStyleBackColor = true;
+            this.dado2.Click += new System.EventHandler(this.dado2_Click);
             // 
             // M20
             // 
@@ -516,6 +523,30 @@
             this.G20.TabIndex = 25;
             this.G20.TabStop = false;
             // 
+            // V20
+            // 
+            this.V20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V20.Location = new System.Drawing.Point(121, 19);
+            this.V20.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.V20.Minimum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            -2147483648});
+            this.V20.Name = "V20";
+            this.V20.Size = new System.Drawing.Size(50, 23);
+            this.V20.TabIndex = 18;
+            this.V20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.V20.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.V16);
@@ -526,6 +557,30 @@
             this.groupBox1.Size = new System.Drawing.Size(319, 49);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
+            // 
+            // V16
+            // 
+            this.V16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V16.Location = new System.Drawing.Point(121, 18);
+            this.V16.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.V16.Minimum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            -2147483648});
+            this.V16.Name = "V16";
+            this.V16.Size = new System.Drawing.Size(50, 23);
+            this.V16.TabIndex = 19;
+            this.V16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.V16.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // groupBox2
             // 
@@ -538,6 +593,30 @@
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             // 
+            // V12
+            // 
+            this.V12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V12.Location = new System.Drawing.Point(121, 17);
+            this.V12.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.V12.Minimum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            -2147483648});
+            this.V12.Name = "V12";
+            this.V12.Size = new System.Drawing.Size(50, 23);
+            this.V12.TabIndex = 20;
+            this.V12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.V12.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.V10);
@@ -548,6 +627,30 @@
             this.groupBox3.Size = new System.Drawing.Size(319, 49);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
+            // 
+            // V10
+            // 
+            this.V10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V10.Location = new System.Drawing.Point(121, 18);
+            this.V10.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.V10.Minimum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            -2147483648});
+            this.V10.Name = "V10";
+            this.V10.Size = new System.Drawing.Size(50, 23);
+            this.V10.TabIndex = 21;
+            this.V10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.V10.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // groupBox4
             // 
@@ -560,6 +663,30 @@
             this.groupBox4.TabIndex = 29;
             this.groupBox4.TabStop = false;
             // 
+            // V8
+            // 
+            this.V8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V8.Location = new System.Drawing.Point(121, 19);
+            this.V8.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.V8.Minimum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            -2147483648});
+            this.V8.Name = "V8";
+            this.V8.Size = new System.Drawing.Size(50, 23);
+            this.V8.TabIndex = 22;
+            this.V8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.V8.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.V6);
@@ -571,6 +698,30 @@
             this.groupBox5.Size = new System.Drawing.Size(319, 51);
             this.groupBox5.TabIndex = 30;
             this.groupBox5.TabStop = false;
+            // 
+            // V6
+            // 
+            this.V6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V6.Location = new System.Drawing.Point(121, 19);
+            this.V6.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.V6.Minimum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            -2147483648});
+            this.V6.Name = "V6";
+            this.V6.Size = new System.Drawing.Size(50, 23);
+            this.V6.TabIndex = 23;
+            this.V6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.V6.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // groupBox6
             // 
@@ -591,6 +742,30 @@
             this.groupBox7.TabIndex = 31;
             this.groupBox7.TabStop = false;
             // 
+            // V2
+            // 
+            this.V2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V2.Location = new System.Drawing.Point(121, 20);
+            this.V2.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.V2.Minimum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            -2147483648});
+            this.V2.Name = "V2";
+            this.V2.Size = new System.Drawing.Size(50, 23);
+            this.V2.TabIndex = 33;
+            this.V2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.V2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.V4);
@@ -601,6 +776,30 @@
             this.groupBox8.Size = new System.Drawing.Size(319, 55);
             this.groupBox8.TabIndex = 32;
             this.groupBox8.TabStop = false;
+            // 
+            // V4
+            // 
+            this.V4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.V4.Location = new System.Drawing.Point(121, 22);
+            this.V4.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.V4.Minimum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            -2147483648});
+            this.V4.Name = "V4";
+            this.V4.Size = new System.Drawing.Size(50, 23);
+            this.V4.TabIndex = 32;
+            this.V4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.V4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Num
             // 
@@ -616,7 +815,7 @@
             // 
             // T
             // 
-            this.T.Location = new System.Drawing.Point(373, 13);
+            this.T.Location = new System.Drawing.Point(382, 441);
             this.T.Name = "T";
             this.T.Size = new System.Drawing.Size(100, 20);
             this.T.TabIndex = 34;
@@ -658,158 +857,6 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "Outros";
             // 
-            // V20
-            // 
-            this.V20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V20.Location = new System.Drawing.Point(121, 19);
-            this.V20.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.V20.Minimum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            -2147483648});
-            this.V20.Name = "V20";
-            this.V20.Size = new System.Drawing.Size(50, 23);
-            this.V20.TabIndex = 18;
-            this.V20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // V16
-            // 
-            this.V16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V16.Location = new System.Drawing.Point(121, 18);
-            this.V16.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.V16.Minimum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            -2147483648});
-            this.V16.Name = "V16";
-            this.V16.Size = new System.Drawing.Size(50, 23);
-            this.V16.TabIndex = 19;
-            this.V16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // V12
-            // 
-            this.V12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V12.Location = new System.Drawing.Point(121, 17);
-            this.V12.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.V12.Minimum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            -2147483648});
-            this.V12.Name = "V12";
-            this.V12.Size = new System.Drawing.Size(50, 23);
-            this.V12.TabIndex = 20;
-            this.V12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // V10
-            // 
-            this.V10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V10.Location = new System.Drawing.Point(121, 18);
-            this.V10.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.V10.Minimum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            -2147483648});
-            this.V10.Name = "V10";
-            this.V10.Size = new System.Drawing.Size(50, 23);
-            this.V10.TabIndex = 21;
-            this.V10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // V8
-            // 
-            this.V8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V8.Location = new System.Drawing.Point(121, 19);
-            this.V8.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.V8.Minimum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            -2147483648});
-            this.V8.Name = "V8";
-            this.V8.Size = new System.Drawing.Size(50, 23);
-            this.V8.TabIndex = 22;
-            this.V8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // V6
-            // 
-            this.V6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V6.Location = new System.Drawing.Point(121, 19);
-            this.V6.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.V6.Minimum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            -2147483648});
-            this.V6.Name = "V6";
-            this.V6.Size = new System.Drawing.Size(50, 23);
-            this.V6.TabIndex = 23;
-            this.V6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // V4
-            // 
-            this.V4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V4.Location = new System.Drawing.Point(121, 22);
-            this.V4.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.V4.Minimum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            -2147483648});
-            this.V4.Name = "V4";
-            this.V4.Size = new System.Drawing.Size(50, 23);
-            this.V4.TabIndex = 32;
-            this.V4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // V2
-            // 
-            this.V2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.V2.Location = new System.Drawing.Point(121, 20);
-            this.V2.Maximum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            0});
-            this.V2.Minimum = new decimal(new int[] {
-            99,
-            0,
-            0,
-            -2147483648});
-            this.V2.Name = "V2";
-            this.V2.Size = new System.Drawing.Size(50, 23);
-            this.V2.TabIndex = 33;
-            this.V2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // conta
             // 
             this.conta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -822,16 +869,26 @@
             this.conta.Text = "200 + 10 + 10";
             this.conta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(407, 412);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "Tester";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // vezes
             // 
-            this.vezes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.vezes.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.vezes.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vezes.Location = new System.Drawing.Point(357, 310);
+            this.vezes.Location = new System.Drawing.Point(357, 299);
+            this.vezes.Multiline = true;
             this.vezes.Name = "vezes";
-            this.vezes.Size = new System.Drawing.Size(125, 31);
-            this.vezes.TabIndex = 40;
-            this.vezes.Text = resources.GetString("vezes.Text");
+            this.vezes.ReadOnly = true;
+            this.vezes.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.vezes.ShortcutsEnabled = false;
+            this.vezes.Size = new System.Drawing.Size(125, 107);
+            this.vezes.TabIndex = 42;
             // 
             // Form1
             // 
@@ -839,6 +896,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 473);
             this.Controls.Add(this.vezes);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.conta);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -882,21 +940,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.O16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.O20)).EndInit();
             this.G20.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.V20)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.V16)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.V12)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.V10)).EndInit();
+            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.V8)).EndInit();
+            this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.V6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.V4)).EndInit();
+            this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.V2)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.V4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -952,7 +1010,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label conta;
-        private System.Windows.Forms.Label vezes;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox vezes;
     }
 }
 

@@ -10,43 +10,115 @@ using System.Windows.Forms;
 
 namespace Dados_roll
 {
+
     public partial class Form1 : Form
     {
         //dados e seus nº | 1 D20 | 2 D16 | 3 D12 | 4 D10 | 5 D8 | 6 D6 | 7 D4 | 8 D2 |
-        public int dado, botton_clicked;
+        public int dado, botton_clicked;     
+        public int V, M, O, N_R;
+        public string equa_show;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void T_TextChanged(object sender, EventArgs e)
-        {
+        private void T_TextChanged(object sender, EventArgs e) {
+
             Num.Text = T.Text;
             conta.Text = T.Text;
         }
 
-        private void dado20_Click(object sender, EventArgs e)
-        {
+        private void dado20_Click(object sender, EventArgs e) {
 
-            //dado = V20.Value;
             botton_clicked = 1;
+            N_R = 21;
+            V = (int)V20.Value; O = (int)M20.Value; M = (int)O20.Value;
+            equation();
         }
 
-        //conta xxx + xx + xx
-        /*for (int i = 0; vezes > ){
-        
-        }*/
-        private void values_to_vetor()
+        private void dado16_Click(object sender, EventArgs e) {
+
+            botton_clicked = 2;
+            N_R = 17;
+            V = (int)V16.Value; O = (int)M16.Value; M = (int)O16.Value;
+            equation();
+        }
+
+        private void dado12_Click(object sender, EventArgs e) {
+
+            botton_clicked = 3; 
+            N_R = 13;
+            V = (int)V12.Value; O = (int)M12.Value; M = (int)O12.Value;
+            equation();
+        }
+
+        private void dado10_Click(object sender, EventArgs e) {
+
+            botton_clicked = 4; 
+            N_R = 11;
+            V = (int)V10.Value; O = (int)M10.Value; M = (int)O10.Value;
+            equation();
+        }
+
+        private void dado8_Click(object sender, EventArgs e) {
+
+            botton_clicked = 5; 
+            N_R = 9;
+            V = (int)V8.Value; O = (int)M8.Value; M = (int)O8.Value;
+            equation();
+        }
+
+        private void dado6_Click(object sender, EventArgs e) {
+
+            botton_clicked = 6;
+            N_R = 7;
+            V = (int)V6.Value; O = (int)M6.Value; M = (int)O6.Value;
+            equation();
+        }
+
+        private void dado4_Click(object sender, EventArgs e) {
+
+            botton_clicked = 8;
+            N_R = 5;
+            V = (int)V4.Value; O = (int)M4.Value; M = (int)O4.Value;
+            equation();
+        }
+
+        private void dado2_Click(object sender, EventArgs e) {
+            botton_clicked = 9;
+            N_R = 3;
+            V = (int)V2.Value; O = (int)M2.Value; M = (int)O2.Value;
+            equation();
+
+        }
+
+        private void equation()
         {
-            //dado = V20.Value;
+            Random RN = new Random();
+            int total_rolagem = 0;
+            
+                    if (vezes.Text != "") { vezes.Text = String.Empty; }
 
-        }
-        private void fazendo_vezes() {
-           // for (int i = 1; 1 < V20; ) { }
+                    for (int i = 0; i < V; i++)
+                    {
+                        int roda = RN.Next(1, N_R);
+                        total_rolagem += roda;
+                        if (i == 0) vezes.Text += roda + "";
+                        else vezes.Text += ", " + roda;
+                    }
+                    Num.Text = Convert.ToString(total_rolagem + M + O);
+                    conta.Text = total_rolagem + " + " + M + " + " + O;
+            // MessageBox.Show(Convert.ToString(M20.Value));
+            }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Test_form newform = new Test_form();
+            newform.ShowDialog();
         }
 
-        private void convert_updown() {
+        public void convert_updown() {
             // NOME antigo mais C no final (convertido)
             int V20C = (int)V20.Value;
             int V16C = (int)V16.Value;
