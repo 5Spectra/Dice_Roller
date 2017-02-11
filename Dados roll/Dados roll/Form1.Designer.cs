@@ -810,7 +810,7 @@
             this.Num.Name = "Num";
             this.Num.Size = new System.Drawing.Size(125, 122);
             this.Num.TabIndex = 33;
-            this.Num.Text = "0";
+            this.Num.Text = "X";
             this.Num.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T
@@ -866,7 +866,7 @@
             this.conta.Name = "conta";
             this.conta.Size = new System.Drawing.Size(125, 31);
             this.conta.TabIndex = 39;
-            this.conta.Text = "200 + 10 + 10";
+            this.conta.Text = "X + X + X";
             this.conta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
